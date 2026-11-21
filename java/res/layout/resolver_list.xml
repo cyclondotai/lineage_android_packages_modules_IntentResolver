@@ -65,13 +65,13 @@
             android:gravity="start|center_vertical" />
     </RelativeLayout>
 
+    <!-- Cyclon (Words look): no full-width hairline on the sheet. -->
     <View
         android:id="@androidprv:id/divider"
         app:layout_alwaysShow="true"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/materialColorSurfaceContainer"
-        android:foreground="?android:attr/dividerVertical" />
+        android:background="@color/materialColorSurfaceContainer" />
 
     <FrameLayout
         android:id="@androidprv:id/stub"
@@ -119,12 +119,12 @@
         android:orientation="vertical"
         android:background="@color/materialColorSurfaceContainer"
         app:layout_ignoreOffset="true">
+        <!-- Cyclon (Words look): no full-width hairline on the sheet. -->
         <View
             android:id="@androidprv:id/resolver_button_bar_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/materialColorSurfaceContainer"
-            android:foreground="?android:attr/dividerVertical" />
+            android:background="@color/materialColorSurfaceContainer" />
         <LinearLayout
             android:id="@androidprv:id/button_bar"
             android:visibility="gone"

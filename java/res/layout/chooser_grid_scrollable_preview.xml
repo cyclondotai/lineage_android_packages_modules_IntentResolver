@@ -97,10 +97,13 @@
         </FrameLayout>
     </LinearLayout>
 
+    <!-- Cyclon (Words look): without a focusable target (the empty state), the scroll view itself takes
+         keyboard focus; its default focus highlight greyed the whole sheet under the handle. -->
     <com.android.intentresolver.widget.ChooserNestedScrollView
         android:id="@+id/chooser_scrollable_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:defaultFocusHighlightEnabled="false">
 
         <LinearLayout
             android:layout_width="match_parent"

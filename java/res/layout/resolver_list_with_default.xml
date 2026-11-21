@@ -46,7 +46,7 @@
                 android:layout_width="@dimen/resolver_icon_size"
                 android:layout_height="@dimen/resolver_icon_size"
                 android:layout_gravity="start|top"
-                android:layout_marginStart="@dimen/resolver_icon_margin"
+                android:layout_marginStart="@dimen/resolver_edge_margin"
                 android:src="@drawable/resolver_icon_placeholder"
                 android:scaleType="fitCenter" />
 
@@ -145,13 +145,13 @@
         </LinearLayout>
     </LinearLayout>
 
+    <!-- Cyclon (Words look): no full-width hairline on the sheet. -->
     <View
         android:id="@androidprv:id/divider"
         app:layout_alwaysShow="true"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/materialColorSurfaceContainer"
-        android:foreground="?android:attr/dividerVertical" />
+        android:background="@color/materialColorSurfaceContainer" />
 
     <FrameLayout
         android:id="@androidprv:id/stub"
@@ -198,10 +198,10 @@
         </LinearLayout>
     </TabHost>
 
+    <!-- Cyclon (Words look): no full-width hairline on the sheet. -->
     <View
         app:layout_alwaysShow="true"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/materialColorSurfaceContainer"
-        android:foreground="?android:attr/dividerVertical" />
+        android:background="@color/materialColorSurfaceContainer" />
 </com.android.intentresolver.widget.ResolverDrawerLayout>
